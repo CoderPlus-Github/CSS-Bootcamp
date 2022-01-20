@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container {
+            box-sizing: border-box;
+            height: 344px;
+            width: 100%;
+            border: 2px solid black;
+            /* display: flex; will make the div.item inline elements */
+            /* Syntax:- display: flex; */
+            display: flex;
+
+            /* Flex Properties for flex-direction are  */
+            /* flex-direction: row; { This is The Default Value of flex direction }
+            /* flex-direction: coloumn;
+            /* flex-direction: row-reverse;
+            /* flex-direction: coloumn-reverse; */
+
+            /* Flex Properties for flex-wrap are  */
+            /* flex-wrap: nowrap; { This is The Default Value of flex direction }
+            /* flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+
+            /* The flex-flow property is used to set combined properties of flex-direction and flex-wrap  */
+            /* Syntax:- flex-flow: row wrap; */
+            flex-flow: row wrap;
+
+            /* These are justify cotent properties  */
+            /* justify-content: center;
+               justify-content: space-between;
+               justify-content: space-evenly;
+               justify-content: space-around; */
+
+            /* now comes the align-items property */
+            /* Types are:- 
+               align-items: center;
+               align-items: flex-end;
+               align-items: flex-start; (default)
+               align-items: strech; */
+
+        }
+
+        .item {
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+            width: 100px;
+            height: 100px;
+
+            /* This the order property */
+            /* higher the order, later the container is shown in the page */
+            /* syntax:- order: 2; */
+
+            /* This is flex-grow property  */
+            /* this property helps in increase the hieght of the container than the others in the page */
+            /* syntax :- flex-grow: 5 or any number of your choise */
+
+            /* This is flex-shrink property  */
+            /* this property is opposite of flex-grow & helps in decrease the hieght of the container than the others in the page */
+            /* syntax :- flex-shrink: 8 or any number of your choise */
+
+            /* This the flex-basis property */
+            /* if the flex-direction is set to row, flex-basis will control the width */
+            /* if the flex-direction is set to coloumn, flex-basis will control the hieght */
+            /* syntax:- flex-basis: ---px; */
+
+            /* This the flex property */
+            /* it is the combined of flex-grow, flex-shrink, flex-basis */
+            /* syntax:- flex: flex-grow flex-shrink flex-basis; */
+
+            /* This is align-self property
+            types are :-
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is Flexbox Tutorial</h1>
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+        <div class="item" id="item4">Fourth Box</div>
+        <div class="item" id="item5">Fifth Block</div>
+        <div class="item" id="item6">Sixth Block</div>
+    </div>
+</body>
+
+</html>

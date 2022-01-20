@@ -1,0 +1,65 @@
+/////////////////----------------
+
+
+/*These are the flex properties for the flex container*/
+
+/* display: flex; will make the div.item inline elements */
+            /* Syntax:- display: flex; */
+            display: flex;
+
+            /* Flex Properties for flex-direction are  */
+            /* flex-direction: row; { This is The Default Value of flex direction }
+            /* flex-direction: coloumn;
+            /* flex-direction: row-reverse;
+            /* flex-direction: coloumn-reverse; */
+
+            /* Flex Properties for flex-wrap are  */
+            /* flex-wrap: nowrap; { This is The Default Value of flex direction }
+            /* flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+
+            /* The flex-flow property is used to set combined properties of flex-direction and flex-wrap  */
+            /* Syntax:- flex-flow: row wrap; */
+            flex-flow: row wrap;
+
+            /* These are justify cotent properties  */
+            /* justify-content: center;
+               justify-content: space-between;
+               justify-content: space-evenly;
+               justify-content: space-around; */
+
+            /* now comes the align-items property */
+            /* Types are:- 
+               align-items: center;
+               align-items: flex-end;
+               align-items: flex-start; (default)
+               align-items: strech; */
+
+These are the properties ofr the flex items
+
+/* This the order property */
+            /* higher the order, later the container is shown in the page */
+            /* syntax:- order: 2; */
+
+            /* This is flex-grow property  */
+            /* this property helps in increase the hieght of the container than the others in the page */
+            /* syntax :- flex-grow: 5 or any number of your choise */
+
+            /* This is flex-shrink property  */
+            /* this property is opposite of flex-grow & helps in decrease the hieght of the container than the others in the page */
+            /* syntax :- flex-shrink: 8 or any number of your choise */
+
+            /* This the flex-basis property */
+            /* if the flex-direction is set to row, flex-basis will control the width */
+            /* if the flex-direction is set to coloumn, flex-basis will control the hieght */
+            /* syntax:- flex-basis: ---px; */
+
+            /* This the flex property */
+            /* it is the combined of flex-grow, flex-shrink, flex-basis */
+            /* syntax:- flex: flex-grow flex-shrink flex-basis; */
+
+            /* This is align-self property
+            types are :-
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center; */
